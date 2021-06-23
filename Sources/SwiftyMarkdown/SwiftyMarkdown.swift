@@ -567,7 +567,7 @@ extension SwiftyMarkdown {
 			if styles.contains(.bold) {
 				attributes[.font] = self.font(for: line, characterOverride: .bold)
 				attributes[.foregroundColor] = self.bold.color
-			}
+            }
 			
             if let linkIdx = styles.firstIndex(of: .link), linkIdx < token.metadataStrings.count {
                 attributes[.foregroundColor] = self.link.color
